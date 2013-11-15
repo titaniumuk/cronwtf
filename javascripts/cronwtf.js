@@ -107,8 +107,8 @@ var CronWTF = {
   months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   monthsMessage: function(values) {
     var v   = []
-    var len = values.length;
-    for(var j = 0; j < len; j++) {
+    var len = values.length + 1;
+    for(var j = 1; j < len; j++) {
       v.push(CronWTF.months[values[j]])
     }
     return "in " + v.join(", ")
